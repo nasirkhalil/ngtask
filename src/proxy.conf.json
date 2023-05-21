@@ -1,6 +1,6 @@
 {
     "/api": {
-    "target": "https://m.dressfair.com/",
+    "target": "",
     "secure": false
     }
 }
