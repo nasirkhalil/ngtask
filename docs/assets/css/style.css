@@ -1,0 +1,1373 @@
+@font-face {
+  font-family: 'gotham';
+  src: url('../font/GothamLight.ttf');
+}
+
+@font-face {
+  font-family: 'gotham-medium';
+  src: url('../font/GothamMedium.ttf');
+}
+
+@font-face {
+  font-family: 'gotham-bold';
+  src: url('../font/GothamBold.ttf');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'gotham', 'Roboto', sans-serif;
+  background-color: #000;
+}
+
+.mobile {
+  display: none;
+}
+
+.sidebar {
+  background: #0F0F0F;
+  mix-blend-mode: normal;
+  border-radius: 40px;
+  height: 100%;
+}
+
+.sidebar .nav li {
+  width: 120%;
+  height: 55px;
+  background: #010101;
+  border-radius: 36.6901px;
+}
+
+.sidebar .nav a {
+  font-family: 'gotham-medium';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13.8318px;
+  line-height: 17px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.main-navbar {
+  height: 96px;
+  background: #0F0F0F;
+  border-radius: 17px;
+}
+
+.nav-carousel {
+  width: 65%;
+}
+
+.top-nav-carousel .item {
+  width: 120px;
+}
+
+.top-nav-carousel img {
+  width: 32px !important;
+  height: 30px;
+}
+
+.top-nav-carousel a {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 10px;
+  /* identical to box height */
+  text-transform: capitalize;
+  text-align: center;
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.main-nav-btn {
+  background: rgba(180, 180, 180, 0.18);
+  border: none;
+  border-radius: 5px;
+  padding: 20px;
+  height: 50px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.main-nav-btn span {
+  font-family: 'gotham-medium';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  text-align: center;
+
+  /* Brand Color Gradient */
+
+  background: linear-gradient(90deg, #F2D71A 0%, #ECB024 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.auth-btns button {
+  border: none;
+}
+
+.auth-btns .login {
+  /* width: 74.02px;
+  height: 46.83px; */
+  background: transparent;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13.5959px;
+  line-height: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'gotham-medium';
+  color: #FFFFFF;
+  /* border: 1px solid #ECB024;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px; */
+}
+
+.auth-btns .signup {
+  /* width: 74.02px;
+  height: 46.83px; */
+  /* Brand Color Gradient */
+  background: transparent;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13.5959px;
+  line-height: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'gotham-medium';
+  color: #fff;
+  /* border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px; */
+}
+
+.main-banner-section .main-banner {
+  margin: 0 auto !important;
+}
+
+.sports-container {
+  font-family: 'gotham-medium';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 26.8025px;
+  line-height: 32px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.see-all-container {
+  font-family: 'gotham-medium';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18.3478px;
+  line-height: 22px;
+  /* identical to box height */
+  text-align: center;
+  color: #F2D71A;
+}
+
+.sports-section a {
+  font-family: 'gotham-medium';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18.3753px;
+  line-height: 22px;
+  /* identical to box height */
+
+  text-align: center;
+  text-transform: capitalize;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.sports-carousel img {
+  width: 150px !important;
+  height: 149px;
+}
+
+.inplay-section button {
+  background: #B4B4B4;
+  border-radius: 6.83333px;
+  width: 148.97px;
+  height: 41px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15.2192px;
+  line-height: 18px;
+  border: none;
+  color: #100F0F;
+}
+
+.inplay-section button.active {
+  /* Brand Color Gradient */
+  width: 148.97px;
+  height: 41px;
+  background: linear-gradient(90deg, #F2D71A 0%, #ECB024 100%);
+  border-radius: 6.83333px;
+  border: none;
+  font-family: 'gotham-medium';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15.2192px;
+  line-height: 18px;
+  box-shadow: 0 0 20px 0px #000;
+  color: #000000;
+  position: relative;
+  z-index: 99;
+}
+
+.inplay-section .team-name p {
+  font-family: 'gotham-medium';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20.8085px;
+  line-height: 25px;
+  color: #FFFFFF;
+}
+
+.inplay-section .team-name span {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20.8085px;
+  line-height: 25px;
+  color: #676767;
+  font-family: 'gotham-medium';
+}
+
+.inplay-section .team-bids p {
+  font-family: 'gotham-bold';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12.7013px;
+  line-height: 13px;
+  color: #000000;
+}
+
+.inplay-section .team-bids span {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 8.24243px;
+  line-height: 7px;
+  /* identical to box height */
+  color: #000000;
+}
+
+.inplay-section .team-bids .bg-blue {
+  width: 65.89px;
+  height: 40.55px;
+  background: #43CEED;
+  border-radius: 3px;
+}
+
+.inplay-section .team-bids .bg-light-blue {
+  width: 65.89px;
+  height: 40.55px;
+  background: #43CEED;
+  opacity: 0.8;
+  border-radius: 3px;
+}
+
+.inplay-section .team-bids .bg-pink {
+  width: 65.89px;
+  height: 40.55px;
+  background: #F796FF;
+  border-radius: 3px;
+}
+
+.inplay-section .team-bids .bg-light-pink {
+  width: 65.89px;
+  height: 40.55px;
+  background: #F796FF;
+  opacity: 0.8;
+  border-radius: 3px;
+}
+
+.premium-exch-section {
+  background-color: #272727;
+  border-radius: 20px;
+  padding-bottom: 20px;
+}
+
+.tutorials-section-desktop h3 {
+  font-family: 'gotham-medium';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 38.2982px;
+  line-height: 46px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.tutorials-section-desktop button {
+  background: linear-gradient(90deg, #F2D71A 0%, #ECB024 100%);
+  width: 330px;
+  height: 68px;
+  border: none;
+  border-radius: 50px;
+  font-family: 'gotham-medium';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20.4337px;
+  line-height: 25px;
+  /* identical to box height */
+  text-align: center;
+  color: #202024;
+  border: 1px solid #fff;
+}
+
+.footer-section p {
+  font-size: 22.2434px;
+  line-height: 115%;
+  /* or 26px */
+  text-align: center;
+  color: #848484;
+}
+
+.footer-section a {
+  font-family: 'gotham-medium';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22.595px;
+  line-height: 115%;
+  /* or 26px */
+  color: #848484;
+}
+
+.hr {
+  border: 1.65867px solid #848484;
+}
+
+/* WhatsApp Section Start */
+.whatsapp-bg {
+  width: 100%;
+  height: 100%;
+  background: url('../images/payment-option-bg.png') no-repeat 0/cover;
+}
+
+.whatsapp-ul-section ul li {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17.4359px;
+  line-height: 40px;
+  /* identical to box height */
+  font-family: 'gotham-medium';
+  color: #FFFFFF;
+}
+
+/* WhatsApp Section End */
+
+/* UPI Deposit Start */
+.auto-deposit-section button.active {
+  width: 225.67px;
+  height: 41.44px;
+  background: linear-gradient(90deg, #F2D71A 0%, #ECB024 100%);
+  border-radius: 6.92351px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15.42px;
+  line-height: 19px;
+  /* identical to box height */
+  font-family: 'gotham-medium';
+  color: #000000;
+  border: none;
+  box-shadow: 0 0 20px 0px #000;
+  position: relative;
+  z-index: 99;
+}
+
+.auto-deposit-section button {
+  width: 204.94px;
+  height: 41.54px;
+  background: #B4B4B4;
+  border-radius: 5.40517px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15.42px;
+  line-height: 19px;
+  /* identical to box height */
+  font-family: 'gotham-medium';
+  color: #474747;
+  border: none;
+  margin-right: -10px;
+}
+
+.auto-deposit-section p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 10.4778px;
+  line-height: 13px;
+  /* identical to box height */
+  font-family: 'gotham-medium';
+  text-align: right;
+  color: #999999;
+  margin-top: 10px !important;
+}
+
+.auto-deposit-section .payment-method-container.active {
+  width: 175px;
+  height: 101px;
+  background: #0F0F0F;
+  border: 1px solid #0F0F0F;
+  border-radius: 18px;
+}
+
+.auto-deposit-section .payment-method-container .active-container {
+  width: 125.48px;
+  height: 47.35px;
+  border-radius: 8.78071px;
+  border: 1px solid #F2D71A;
+}
+
+.auto-deposit-section .payment-method-container .active-container button {
+  width: 112.62px;
+  height: 35.17px;
+  background: linear-gradient(90deg, #F2D71A 0%, #ECB024 100%);
+  border-radius: 8.78071px;
+}
+
+.auto-deposit-section .payment-method-container {
+  width: 175px;
+  height: 101px;
+  border: 1px solid #0F0F0F;
+  border-radius: 18px;
+}
+
+.auto-deposit-section .payment-method-container .non-active-container {
+  width: 125.48px;
+  height: 47.35px;
+  border-radius: 8.78071px;
+  border: 0.876439px solid #B4B4B4;
+}
+
+.auto-deposit-section .payment-method-container .non-active-container button {
+  width: 112.62px;
+  height: 35.17px;
+  background: #B4B4B4;
+  border-radius: 8.78071px;
+}
+
+.upi-payment-option-section button.active {
+  width: 171.24px;
+  height: 34.71px;
+  background: linear-gradient(90deg, #F2D71A 0%, #ECB024 100%);
+  border-radius: 5.7852px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12.8848px;
+  line-height: 15px;
+  font-family: 'gotham-medium';
+  color: #000000;
+  border: none;
+  box-shadow: 0 0 20px 0px #000;
+  position: relative;
+  z-index: 9;
+}
+
+.upi-payment-option-section button {
+  width: 204.8px;
+  height: 34.71px;
+  background: #B4B4B4;
+  border-radius: 5.7852px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12.8848px;
+  line-height: 15px;
+  font-family: 'gotham-medium';
+  color: #474747;
+  border: none;
+  margin-left: -10px;
+}
+
+.payment-option-bg {
+  width: 100%;
+  height: 100%;
+  background: url('../images/payment-option-bg.png') no-repeat 0/cover;
+}
+
+.bordor-right {
+  border-right: 0.584423px solid #535357;
+}
+
+.payment-details-container h4 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18.0871px;
+  line-height: 22px;
+  /* identical to box height */
+  font-family: 'gotham-medium';
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.payment-bor-bot {
+  border-bottom: 0.385473px solid #535357;
+}
+
+.account-details p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13.4916px;
+  line-height: 16px;
+  text-align: center;
+  font-family: 'gotham-medium';
+  color: #FFFFFF;
+}
+
+.payment-details-container h5 {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 13.4916px;
+  line-height: 13px;
+  font-family: 'gotham-bold';
+  color: #FF2C2C;
+}
+
+.payment-details-container ul {
+  padding-left: 1.5rem;
+}
+
+.payment-details-container ul li {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 13.4916px;
+  color: #999999;
+}
+
+.upload label {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13.4916px;
+  line-height: 16px;
+  font-family: 'gotham-medium';
+  color: #FFFFFF;
+}
+
+.upload .file-input {
+  width: 100%;
+  height: 36.62px;
+  background: #353841;
+  border-radius: 18.1172px;
+}
+
+.upload input {
+  width: 100%;
+  display: none;
+}
+
+.upload .file-input i {
+  font-size: 20px;
+  color: #535357;
+  cursor: pointer;
+}
+
+.upload .file-input span {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12.5642px;
+  line-height: 14px;
+  /* identical to box height */
+  font-family: 'gotham-medium';
+  text-align: center;
+  color: #535357;
+  cursor: pointer;
+}
+
+.upload .error-msg {
+  font-style: normal;
+  font-weight: 325;
+  font-size: 13.4916px;
+  line-height: 16px;
+  color: #FF2C2C;
+}
+
+.amount label {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13.4916px;
+  line-height: 16px;
+  font-family: 'gotham-medium';
+  color: #FFFFFF;
+}
+
+.amount input {
+  width: 1-00%;
+  height: 36.23px;
+  background: #353841;
+  border-radius: 18.1172px;
+  border: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11.5642px;
+  line-height: 14px;
+  /* identical to box height */
+  font-family: 'gotham-medium';
+  color: #fff;
+  padding-left: 20px;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.amount .error-msg {
+  font-style: normal;
+  font-weight: 325;
+  font-size: 13.4916px;
+  line-height: 16px;
+  color: #FF2C2C;
+}
+
+.amount-btns button.active {
+  width: 129.52px;
+  height: 36.23px;
+  background: linear-gradient(90deg, #F2D71A 0%, #ECB024 100%);
+  border-radius: 18.1172px;
+}
+
+.amount-btns button {
+  width: 129.52px;
+  height: 36.23px;
+  background: #1F1D14;
+  border-radius: 18.1172px;
+  border: 1px solid #F2D71A;
+}
+
+.submit input {
+  width: 100%;
+  height: 36.23px;
+  background: linear-gradient(90deg, #F2D71A 0%, #ECB024 100%);
+  border-radius: 18.1172px;
+  border: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15.4189px;
+  line-height: 19px;
+  /* identical to box height */
+  text-align: center;
+  font-family: 'gotham-medium';
+  color: #2D2E35;
+  padding-top: 4px;
+}
+
+.videos {
+  width: 100%;
+  height: 211.24px;
+  background: #D9D9D9;
+  border-radius: 18.1172px;
+}
+
+.videos p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13.9691px;
+  line-height: 17px;
+  /* identical to box height */
+  text-align: center;
+  font-family: 'gotham-medium';
+  color: #000000;
+  position: absolute;
+  top: 10px;
+  left: 20px;
+}
+
+.payment-option-right h6 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15.2998px;
+  line-height: 18px;
+  font-family: 'gotham-medium';
+  color: #FFFFFF;
+}
+
+.payment-option-note-ul {
+  list-style: none;
+  padding-left: .5rem !important;
+}
+
+.payment-option-note-ul li::before {
+  content: "\2022";
+  background: linear-gradient(90deg, #F2D71A 0%, #ECB024 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.payment-option-note-ul li span {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12.07805px;
+  line-height: 10px;
+  /* identical to box height */
+  color: #FFFFFF;
+}
+
+/* UPI Deposit End */
+
+/* CountDown Section Start */
+.countdown-section h2 {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 66.0308px;
+  line-height: 79px;
+  text-align: center;
+  font-family: 'gotham-medium';
+  color: #FFFFFF;
+}
+
+.countdown-section .pending-btn {
+  width: 207.82px;
+  height: 53.81px;
+  /* Brand Color Gradient */
+  background: linear-gradient(90deg, #F2D71A 0%, #ECB024 100%);
+  border-radius: 24.5639px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 21.9468px;
+  line-height: 26px;
+  text-align: center;
+  font-family: 'gotham-medium';
+  color: #000000;
+  border: none;
+}
+
+.countdown-section p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16.4613px;
+  line-height: 20px;
+  text-align: center;
+  font-family: 'gotham-medium';
+  color: #FFFFFF;
+}
+
+.countdown-section .countdown-bot-btn button {
+  width: 142.64px;
+  height: 36.93px;
+  background: linear-gradient(90deg, #F2D71A 0%, #ECB024 100%);
+  border-radius: 16.8593px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15.0631px;
+  line-height: 18px;
+  /* identical to box height */
+  border: none;
+  text-align: center;
+  font-family: 'gotham-medium';
+  color: #000000;
+
+}
+
+.base-timer {
+  position: relative;
+  width: 250px;
+  height: 250px;
+}
+
+.base-timer__svg {
+  transform: scaleX(-1);
+}
+
+.base-timer__circle {
+  fill: none;
+  stroke: none;
+}
+
+.base-timer__path-elapsed {
+  stroke-width: 8px;
+  stroke: #2D2E35;
+}
+
+.base-timer__path-remaining {
+  stroke-width: 3px;
+  stroke-linecap: round;
+  transform: rotate(90deg);
+  transform-origin: center;
+  transition: 1s linear all;
+  fill-rule: nonzero;
+  stroke: currentColor;
+}
+
+.base-timer__path-remaining.green {
+  color: #F2D71A;
+}
+
+.base-timer__path-remaining.orange {
+  color: #ECB024;
+}
+
+.base-timer__path-remaining.red {
+  color: red;
+}
+
+.base-timer__label {
+  position: absolute;
+  width: 250px;
+  height: 250px;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 41.8818px;
+  font-family: 'gotham-medium';
+  line-height: 50px;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+/* CountDown Section End */
+
+/* Payment Accept Start */
+.payment-accept-btn {
+  width: 292.76px;
+  height: 59.5px;
+  background: linear-gradient(90deg, #25CF43 26.9%, #61FD7D 100.12%);
+  border-radius: 27.1637px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24.2696px;
+  line-height: 29px;
+  text-align: center;
+  font-family: 'gotham-medium';
+  color: #000000;
+  border: none;
+}
+
+/* Payment Accept End */
+
+/* Payment Rejected Start */
+.payment-reject-btn {
+  width: 292.76px;
+  height: 59.5px;
+  background: linear-gradient(75.27deg, #F43939 6.96%, #FF5656 91.61%);
+  border-radius: 27.1637px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24.2696px;
+  line-height: 29px;
+  text-align: center;
+  font-family: 'gotham-medium';
+  color: #000000;
+  border: none;
+}
+
+.countdown-section span {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 41.8818px;
+  line-height: 50px;
+  text-align: center;
+  font-family: 'gotham-medium';
+  color: #FFFFFF;
+}
+
+/* Payment Rejected End */
+
+/* Transaction Section Start */
+.transaction-accordian .accordion-item {
+  border: none;
+  background: #000;
+}
+
+.transaction-accordian .bg-item .accordion-button {
+  background: #0F0F0F;
+  border-radius: 18px !important;
+}
+
+.transaction-accordian .accordion-button {
+  background: #000;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18.4793px;
+  line-height: 22px;
+  text-align: center;
+  font-family: 'gotham-medium';
+  color: #FFFFFF;
+  width: 100%;
+  height: 110px;
+}
+
+.transaction-accordian .accordion-button::after {
+  display: none;
+}
+
+.transaction-accordian .accordion-button:focus {
+  box-shadow: none;
+}
+
+.transaction-accordian .accordion-button p {
+  margin-bottom: -6px !important;
+}
+
+.transaction-accordian .accordion-button span {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 11.4065px;
+  line-height: 14px;
+  /* identical to box height */
+  color: #999999;
+}
+
+.transaction-details div {
+  width: 100%;
+  margin: 14px 10px;
+  padding: 10px;
+  border-bottom: 1px solid #535357;
+}
+
+.transaction-details div span {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14.5263px;
+  line-height: 13px;
+  /* identical to box height */
+  font-family: 'gotham-medium';
+  color: #999999;
+}
+
+.transaction-details div p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20.0533px;
+  line-height: 20px;
+  font-family: 'gotham-medium';
+  color: #FFFFFF;
+}
+
+/* Transaction Section End */
+
+@media screen and (max-width: 1544px) {
+  .top-nav-carousel {
+    width: 62%;
+  }
+}
+
+@media screen and (max-width: 1544px) {
+  .top-nav-carousel {
+    width: 58%;
+  }
+}
+
+@media screen and (max-width: 1296px) {
+  .top-nav-carousel {
+    width: 54%;
+  }
+}
+
+@media screen and (max-width: 1188px) {
+  .top-nav-carousel {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 1098px) {
+  .top-nav-carousel {
+    width: 45%;
+  }
+}
+
+@media screen and (max-width: 1003px) {
+  .top-nav-carousel {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .bordor-right {
+    border-right: none;
+    border-bottom: 0.584423px solid #535357;
+  }
+
+  .payment-option-mt {
+    margin-top: 1rem !important;
+  }
+
+  .upload,
+  .amount {
+    width: 100% !important;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .sidebar .nav li {
+    background-color: unset;
+    justify-content: center;
+    width: 100%;
+    padding-left: 0 !important;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+  }
+
+  .main-nav-btn {
+    font-size: 10px;
+    padding: 10px;
+    height: 42px;
+  }
+
+  .main-nav-btn span {
+    font-size: 14px;
+  }
+
+  .top-nav-carousel img {
+    width: 30px !important;
+    height: 25px;
+  }
+
+  .auth-btns .login {
+    /* width: 54.02px;
+    height: 44.83px; */
+    font-size: 10.5959px;
+    line-height: 10px;
+  }
+
+  .auth-btns .signup {
+    /* width: 54.02px;
+    height: 44.83px; */
+    /* font-weight: 600; */
+    font-size: 10.5959px;
+    line-height: 10px;
+  }
+
+  .mobile-section-bg {
+    width: 100%;
+    height: 100%;
+    background: url('../images/mobile-bg.png') no-repeat 0/cover;
+  }
+
+  .main-banner-section-mobile button.active {
+    width: 148px;
+    height: 30px;
+    background: linear-gradient(90deg, #F2D71A 0%, #ECB024 100%);
+    border-radius: 5px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11.136px;
+    line-height: 13px;
+    font-family: 'gotham-medium';
+    color: #000000;
+    border: none;
+    position: relative;
+    z-index: 99;
+    box-shadow: 0 0 20px 0px #000;
+  }
+
+  .main-banner-section-mobile button {
+    width: 177px;
+    height: 30px;
+    background: #B4B4B4;
+    border-radius: 5px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11.136px;
+    line-height: 13px;
+    color: #474747;
+    border: none;
+  }
+
+  .sports-container {
+    font-size: 20px;
+  }
+
+  .see-all-container {
+    font-size: 14px;
+  }
+
+  .sports-carousel img {
+    width: 100% !important;
+    height: 100%;
+  }
+
+  .inplay-section button.active {
+    width: 109px;
+    height: 30px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11.136px;
+    line-height: 13px;
+    color: #000000;
+  }
+
+  .inplay-section button {
+    width: 112px;
+    height: 30px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11.136px;
+    line-height: 13px;
+    color: #100F0F;
+  }
+
+  .inplay-section .team-name p {
+    font-size: 11.8085px;
+  }
+
+  .inplay-section .team-name span {
+    font-size: 15.8085px;
+  }
+
+  .inplay-section .team-bids .bg-blue {
+    width: 64.88px;
+    height: 39.93px;
+  }
+
+  .inplay-section .team-bids p {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 10.7013px;
+    line-height: 13px;
+    /* identical to box height */
+    color: #000000;
+  }
+
+  .inplay-section .team-bids span {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 8px;
+    line-height: 7px;
+    color: #000000;
+  }
+
+  .live-casino-carousel img {
+    width: 85% !important;
+    height: 110px;
+  }
+
+  .premium-exch-section {
+    background-color: transparent;
+    border-radius: unset;
+    padding-bottom: unset;
+  }
+
+  .tutorials-section h3 {
+    font-family: 'gotham-medium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 23.0617px;
+    line-height: 28px;
+    text-align: center;
+    color: #FFFFFF;
+    text-transform: uppercase;
+  }
+
+  .tutorials-section button {
+    background: linear-gradient(90deg, #F2D71A 0%, #ECB024 100%);
+    width: 50%;
+    height: 40px;
+    border: none;
+    border-radius: 50px;
+    font-family: 'gotham-medium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15.5954px;
+    line-height: 19px;
+    /* identical to box height */
+    text-align: center;
+    color: #202024;
+    border: 1px solid #fff;
+  }
+
+  .footer-text-container p {
+    font-size: 15.3057px;
+    line-height: 115%;
+    text-align: center;
+    color: #848484;
+  }
+
+  .footer-links a {
+    font-family: 'gotham-medium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15.5477px;
+    line-height: 115%;
+    /* or 18px */
+    color: #848484;
+    text-decoration: none;
+  }
+
+  hr {
+    border: 1.14133px solid #848484;
+  }
+
+  .bottom-footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 9999;
+    background: #000;
+  }
+
+  .bottom-footer a {
+    width: 100%;
+    height: 52.52px;
+    background: #232323;
+    font-size: 10.449px;
+    line-height: 13px;
+    text-align: center;
+    text-decoration: none;
+    color: #FFFFFF;
+  }
+
+  /* WhatsApp Section Start */
+  .whatsapp-ul-section ul li {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 11.4359px;
+    line-height: 26px;
+    font-family: 'gotham-medium';
+    color: #FFFFFF;
+  }
+
+  /* WhatsApp Section End */
+
+  /* UPI Section Start */
+  .auto-deposit-section button.active {
+    width: 150.67px;
+    font-size: 14.42px;
+  }
+
+  .auto-deposit-section button {
+    width: 170.94px;
+    font-size: 14.42px;
+  }
+
+  .upi-accordian .accordion-item {
+    border: none;
+  }
+
+  .upi-accordian .accordion-button {
+    width: 100%;
+    height: 120px;
+    background: #2D2E35;
+    border-top: 3px solid #373740;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15.9948px;
+    line-height: 46px;
+    /* identical to box height */
+    font-family: 'gotham-medium';
+    text-align: right;
+    color: #999999;
+  }
+
+  .upi-accordian .accordion-button:focus {
+    box-shadow: none;
+  }
+
+  .upi-accordian .accordion-button::after {
+    display: none;
+  }
+
+  .accordion-body {
+    background: #212529;
+  }
+
+  .upi-payment-option-section button.active,
+  .upi-payment-option-section button {
+    width: 100%;
+  }
+
+  .upi-payment-option-section button.active {
+    margin-left: 2px;
+  }
+
+  .amount-btns button.active,
+  .amount-btns button {
+    width: 30%;
+    height: 36.23px;
+  }
+
+  .upi-payment-option-section button.active {
+    margin-left: -10px;
+  }
+
+  .payment-option-note-ul li span {
+    line-height: 15px;
+  }
+
+  /* UPI Section End */
+
+  /* Transaction Section Start */
+  .transaction-accordian .accordion-body {
+    background-color: #000;
+    padding: unset;
+  }
+
+  .transaction-accordian .bg-item .accordion-button {
+    background-color: #2D2E35;
+    border-radius: 0 !important;
+  }
+
+  .transaction-accordian .accordion-button {
+    border-top: 3px solid #373740;
+    background-color: #2D2E35;
+    padding: unset;
+    font-size: 16.4793px;
+  }
+
+  .transaction-accordian .accordion-button span {
+    font-size: 10.4065px;
+  }
+
+  .transaction-details div p {
+    font-size: 16.0533px;
+  }
+
+  .transaction-details div span {
+    font-size: 12.5263px;
+  }
+
+  /* Transaction Section End */
+
+  .countdown-section span {
+    font-size: 26.8818px;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .auth-btns .login {
+    /* width: 44.02px;
+    height: 44.83px; */
+    font-size: 60%;
+    line-height: 10px;
+    margin-left: .1rem;
+  }
+
+  .auth-btns .signup {
+    /* width: 44.02px;
+    height: 44.83px; */
+    /* font-weight: 600; */
+    font-size: 60%;
+    line-height: 10px;
+  }
+
+  .mobile-nav-gap {
+    gap: .1rem !important;
+  }
+}
